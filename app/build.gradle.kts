@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.zenith.group2_finalproject"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.zenith.group2_finalproject"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -66,4 +66,21 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Access old API
+    implementation("androidx.appcompat:appcompat:1.6.1")
+
+    // System UI bars
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.28.0")
+
+    // Permissions
+    implementation("com.google.accompanist:accompanist-permissions:0.28.0")
+
+    // Navigation
+    implementation("androidx.navigation:navigation-compose:2.5.3")
+    implementation("com.google.accompanist:accompanist-navigation-animation:0.25.1")
+
+    // Material icons
+    implementation("androidx.compose.material:material-icons-extended:1.3.1")
+
 }
