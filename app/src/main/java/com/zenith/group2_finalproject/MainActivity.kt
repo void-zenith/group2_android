@@ -44,6 +44,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.zenith.group2_finalproject.navigation.NavRoutes
+import com.zenith.group2_finalproject.navigation.Routes
 import com.zenith.group2_finalproject.ui.theme.Group2_finalprojectTheme
 import java.util.Locale
 
@@ -76,7 +78,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxWidth(),
                     color = Color.Blue
                 ){
-
+    NavRoutes(navigations)
                 }
             }
         }
